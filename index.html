@@ -1,10 +1,78 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>My GitHub!!</title>
-  </head>
-  <body>
-    <h1>你媽吧旗</h1>
-  </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My resume-2022</title>
+    <!-- Bootstrap 5.2 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Vuetifyjs CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"> -->
+    <!-- 導入style -->
+    <link rel="stylesheet" href="style/style.css" media="all">
+    <!-- 自型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- <div id="app">
+        <v-app id="inspire">
+            -->
+
+
+    <hr>
+    <div id="app1">
+        <v-app id="inspire">
+            <div class="text-center">
+                <v-rating v-model="rating" background-color="Black lighten-3" color="orange" large></v-rating>
+            </div>
+
+            <v-card color="basil">
+                <v-card-title class="text-center justify-center py-6">
+                    <h1 class="font-weight-bold text-h2 basil--text">
+                        {{name}}
+                    </h1>
+                </v-card-title>
+
+                <v-tabs v-model="tab" background-color="transparent" color="basil" grow>
+                    <v-tab v-for="item in items" :key="item">
+
+                        {{item.tab}}
+                    </v-tab>
+                </v-tabs>
+
+                <v-tabs-items v-model="tab">
+                    <v-tab-item v-for="item in items" :key="item">
+                        <v-card color="basil" flat>
+
+                            <v-card-text v-html="item.content">{{item.content}}</v-card-text>
+
+
+
+                        </v-card>
+                    </v-tab-item>
+                </v-tabs-items>
+            </v-card>
+        </v-app>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js "></script>
+    <!-- 導入js -->
+    <script src="/js/vue.js"></script>
+</body>
+
 </html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js " integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy " crossorigin="anonymous "></script>
