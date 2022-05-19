@@ -11,3 +11,109 @@
      * {
          font-family: 'Noto Sans TC', sans-serif;
      }
+     
+     @media (max-width:900px) and (min-width:320px) {
+         .mid {
+             display: block;
+             font-size: 8px;
+         }
+         .top {
+             width: 50px;
+             height: 50px;
+             position: fixed;
+             right: 10px;
+             bottom: 70px;
+         }
+         .top>.a {
+             color: black;
+             margin-top: 10px;
+             display: block;
+             background-color: white;
+             width: 50px;
+             height: 50px;
+             border-radius: 50%;
+             text-align: center;
+             text-decoration: none;
+             line-height: 50px;
+         }
+         .top>.b {
+             color: white;
+             margin-top: 10px;
+             display: block;
+             background-color: black;
+             width: 50px;
+             height: 50px;
+             border-radius: 50%;
+             text-align: center;
+             text-decoration: none;
+             line-height: 50px;
+         }
+     }
+     
+     .top {
+         width: 50px;
+         height: 50px;
+         position: fixed;
+         right: 5%;
+         bottom: 70px;
+     }
+     
+     .top>.a {
+         color: black;
+         margin-top: 10px;
+         display: block;
+         background-color: white;
+         width: 50px;
+         height: 50px;
+         border-radius: 50%;
+         text-align: center;
+         text-decoration: none;
+         line-height: 50px;
+     }
+     
+     .top>.b {
+         color: white;
+         margin-top: 10px;
+         display: block;
+         background-color: black;
+         width: 50px;
+         height: 50px;
+         border-radius: 50%;
+         text-align: center;
+         text-decoration: none;
+         line-height: 50px;
+     }
+     
+     @media (max-width:1920px) and (min-width:901px) {
+         .top {
+             width: 50px;
+             height: 50px;
+             position: fixed;
+             right: 10%;
+             bottom: 70px;
+         }
+         .top>.a {
+             color: black;
+             margin-top: 10px;
+             display: block;
+             background-color: white;
+             width: 50px;
+             height: 50px;
+             border-radius: 50%;
+             text-align: center;
+             text-decoration: none;
+             line-height: 50px;
+         }
+         .top>.b {
+             color: white;
+             margin-top: 10px;
+             display: block;
+             background-color: black;
+             width: 50px;
+             height: 50px;
+             border-radius: 50%;
+             text-align: center;
+             text-decoration: none;
+             line-height: 50px;
+         }
+     }

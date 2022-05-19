@@ -17,7 +17,7 @@ new Vue({
                 items: [{
                         tab: '學歷',
                         content: `
-                        
+                        <iframe style="  height:1000px;  width: 100%;" src="./Timeline.html"></iframe>
                         `
                     }, {
                         tab: '學位',

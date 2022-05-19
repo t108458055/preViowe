@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+
+    <!-- Bootstrap 5.2 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Vuetifyjs CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"> -->
+    <style>
+        .v-card.on-hover.theme--dark {
+            background-color: rgba(#FFF, 0.8)
+        }
+        
+        .v-card__text {
+            color: #000
+        }
+        
+        .elevation-2:hover {
+            transition: opacity .4s ease-in-out;
+            background-color: gainsboro;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="app">
+        <v-app id="inspire">
+            <v-timeline>
+                <v-timeline-item v-for="num in nums" :key="num" color="black" small>
+                    <template v-slot:opposite>
+                <span>{{num.yearn}}</span>
+              </template>
+
+                    <v-card class="elevation-2">
+                        <v-card-title class="text-h5">
+                            {{num.title}}
+                        </v-card-title>
+
+                        <v-card-text>
+                            {{num.content}}
+                        </v-card-text>
+
+                    </v-card>
+
+                </v-timeline-item>
+            </v-timeline>
+        </v-app>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js "></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js "></script>
+<script>
+    new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+        data() {
+            return {
+                nums: [{
+                    yearn: 'Now',
+                    title: '尋職中',
+                    content: '48'
+                }, {
+                    yearn: 'May.2022',
+                    title: 'C#全端開發工程師班',
+                    content: 'sdsdasdsadsadsd48'
+                }, {
+                    yearn: 'Oct.2021',
+                    title: '台北科技大學 能源與冷凍空調系',
+                    content: '專讀空氣與化學濾網之潔淨室專業領域。'
+                }, {
+                    yearn: 'Oct.2017',
+                    title: '亞翔工程 生物科技園區公共工程',
+                    content: '協助園區部分無塵室隔間工程。'
+                }, {
+                    yearn: 'May.2016',
+                    title: '亞翔工程 記憶體擴建工程',
+                    content: '協作無塵室工程整個專案流程。'
+                }, {
+                    yearn: 'Jan.2016',
+                    title: '國軍義務 一年役',
+                    content: '台中234旅-駐地演訓-移防體驗-聯勇'
+                }, {
+                    yearn: 'June.2014',
+                    title: '勤益科技大學 冷凍空調與能源系',
+                    content: '空調與冷凍能源相關理論專業領域學習。'
+                }, {
+                    yearn: 'June.2010',
+                    title: '木柵高工 配管科',
+                    content: '機械類組,實作為工業焊接與自來水配管。'
+                }],
+            }
+        },
+    })
+</script>
+
+</html>
