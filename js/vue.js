@@ -12,11 +12,15 @@ new Vue({
             return {
                 tab: null,
                 rating: 0,
+                email: 't108458055@gmail.com',
+                aboutme: '兩年機電專案現場工程經驗，機電包商監造管理，並做保持專案順利進行。嘗試跨域之軟體工程師之路。',
                 items: [{
-                        tab: '關於我',
-                        content: `<center><p>兩年機電專案現場工程經驗，機電包商監造管理，並做保持專案順利進行。嘗試跨域之軟體工程師之路。</p></center>`
-                    }, {
                         tab: '學歷',
+                        content: `
+                        
+                        `
+                    }, {
+                        tab: '學位',
                         content: ` 
 
 
@@ -87,7 +91,7 @@ new Vue({
                         <div class="accordion-item">
                         <h2 class="accordion-header" id="heading-1WorkQ">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1WorkQ" aria-expanded="false" aria-controls="collapse-1WorkQ">
-                          B.	記憶體廠擴建工程 - 潔淨室內裝工程 (May.2016 ~ Aug.2018)
+                          B.	記憶體廠擴建工程 - 潔淨室內裝工程 (May.2016 ~ Oct.2018)
                           </button>
                         </h2>
                         <div id="collapse-1WorkQ" class="accordion-collapse collapse" aria-labelledby="heading-1WorkQ" data-bs-parent="#accordionMom-1WorkQ">
@@ -113,8 +117,9 @@ new Vue({
                         <p><h5>3.程式開發VS( ASP.NET MVC Core 5), VSC(HTML)</h5>
                         進修C#全端養成班期間，所學習Web架設前端與後端連接溝通，並將課程所學實作至專題的網站架設，負責收集加密與解密編碼與登入登出資料，並套用至班級專題中。</p>
                         `
-                    }, {
-                        tab: '聯絡方式',
+                    },
+                    /** {
+                        tab: '',
                         content: ` 
 
                         <div class="accordion"id="accordionMom-1" >
@@ -158,8 +163,8 @@ new Vue({
 
 
 
-                        `
-                    },
+                        
+                    },*/
 
 
                 ],
