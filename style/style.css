@@ -9,7 +9,7 @@
      }
      
      * {
-         font-family: 'Noto Sans TC', sans-serif;
+         font-family: 'Noto Sans TC', Arial, Helvetica, sans-serif;
      }
      
      @media (max-width:900px) and (min-width:320px) {

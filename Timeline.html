@@ -14,7 +14,18 @@
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"> -->
+    <!-- 自型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+
+
+
     <style>
+        .v-timeline {
+            font-family: 'Noto Sans TC', Arial, Helvetica, sans-serif;
+        }
+        
         .v-card.on-hover.theme--dark {
             background-color: rgba(#FFF, 0.8)
         }
@@ -23,18 +34,32 @@
             color: #000
         }
         
+        .elevation-2 {
+            transform: scale(1, 1);
+            transition: all 1s ease-out;
+            /* transition: opacity 1s ease-in-out; */
+        }
+        
         .elevation-2:hover {
-            transition: opacity .4s ease-in-out;
+            /* transition: opacity .4s ease-in-out; */
             background-color: gainsboro;
+            transform: scale(1.01, 1.01);
+        }
+        
+        .v-application .text-h5,
+        .v-application .text-h6 {
+            line-height: 2rem;
+            /* font-family: Roboto,sans-serif!important; */
+            font-family: 'Noto Sans TC', Arial, Helvetica, sans-serif!important;
         }
     </style>
 
 </head>
 
 <body>
-    <div id="app">
+    <div id="app2">
         <v-app id="inspire">
-            <v-timeline>
+            <v-timeline id="mytimeline">
                 <v-timeline-item v-for="num in nums" :key="num" color="black" small>
                     <template v-slot:opposite>
                 <span>{{num.yearn}}</span>
@@ -60,18 +85,18 @@
 <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js "></script>
 <script>
     new Vue({
-        el: '#app',
+        el: '#app2',
         vuetify: new Vuetify(),
         data() {
             return {
                 nums: [{
                     yearn: 'Now',
                     title: '尋職中',
-                    content: '48'
+                    content: '尋求全端工程師維護.開發.重構的挑戰，或原有之空調系統現場.設計的職缺。'
                 }, {
                     yearn: 'May.2022',
                     title: 'C#全端開發工程師班',
-                    content: 'sdsdasdsadsadsd48'
+                    content: '學習Web前後端技術基礎,並實作MS MVC core基於Net.5開發環境。'
                 }, {
                     yearn: 'Oct.2021',
                     title: '台北科技大學 能源與冷凍空調系',
